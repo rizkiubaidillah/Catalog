@@ -27,44 +27,27 @@
   </header>
 
   <!-- Daftar Menu -->
-  <main class="max-w-xl mx-auto px-4">
-    <ul class="space-y-4">
-       <li class="flex items-center gap-4 border-b pb-2">
-        <img src="Ati Ampela Ayam.png" alt="Ati Ampela" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
-        <div class="flex justify-between w-full">
-          <span>Ati Ampela Ayam</span><span>Rp12.000</span>
-        </div>
-      </li>
-     <li class="flex items-center gap-4 border-b pb-2">
-        <img src="Wortel Import.png" alt="Wortel Import" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
-        <div class="flex justify-between w-full">
-          <span>Wortel Import</span><span>Rp 7.000/KG</span>
-        </div>
-      </li>
- <li class="flex items-center gap-4 border-b pb-2">
-        <img src="Wortel Lokal.png" alt="Wortel Lokal" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
-        <div class="flex justify-between w-full">
-          <span>Wortel Lokal</span><span>Rp 4.000/KG</span>
-        </div>
-      </li>
-<li class="flex items-center gap-4 border-b pb-2">
-        <img src="Ayam Kampung.png" alt="Ayam Kampung" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
-        <div class="flex justify-between w-full">
-          <span>Ayam Kampung</span><span>Rp 60.000/Ekor/Kg</span>
-        </div>
-      </li>
-<li class="flex items-center gap-4 border-b pb-2">
-        <img src="Ayam Negri.png" alt="Ayam Negri" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
-        <div class="flex justify-between w-full">
-          <span>Ayam Negri</span><span>Rp 35.000/Ekor/Kg</span>
-        </div>
-      </li>
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <!-- Item 1 -->
+    <li class="flex items-center gap-4 p-3 bg-white rounded shadow">
+      <img src="Ati Ampela Ayam.png" alt="Ati Ampela" class="w-20 h-20 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+      <div class="flex justify-between items-center w-full">
+        <span>Ati Ampela Ayam</span><span>Rp12.000</span>
+      </div>
+    </li>
 
+    <!-- Item 2 -->
+    <li class="flex items-center gap-4 p-3 bg-white rounded shadow">
+      <img src="Wortel Import.png" alt="Wortel Import" class="w-20 h-20 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+      <div class="flex justify-between items-center w-full">
+        <span>Wortel Import</span><span>Rp 7.000/KG</span>
+      </div>
+    </li>
 
-
-
-    </ul>
-  </main>
+    <!-- Tambahkan item lainnya dengan pola yang sama -->
+  </ul>
+</main>
 
 <!-- Modal Preview Gambar -->
   <div id="modal" class="fixed inset-0 hidden items-center justify-center modal-bg z-50">
