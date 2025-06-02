@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Katalog Sayuran</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .modal-bg {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800 font-sans">
+
+  <!-- Link WA Atas -->
+  <div class="bg-green-100 text-center py-3">
+    <a href="https://wa.me/62881024692667" target="_blank" class="text-green-700 font-semibold hover:underline">
+      📲 Hubungi via WhatsApp: 0881-0246-92667
+    </a>
+  </div>
+
+  <!-- Judul -->
+  <header class="text-center py-6">
+    <h1 class="text-3xl font-bold text-green-700">Katalog Menu Sayuran Segar</h1>
+    <p class="text-sm text-gray-500">Harga terjangkau & kualitas terbaik</p>
+  </header>
+
+  <!-- Daftar Menu -->
+  <main class="max-w-xl mx-auto px-4">
+    <ul class="space-y-4">
+       <li class="flex items-center gap-4 border-b pb-2">
+        <img src="Ati Ampela Ayam.png" alt="Ati Ampela" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+        <div class="flex justify-between w-full">
+          <span>Ati Ampela Ayam</span><span>Rp12.000</span>
+        </div>
+      </li>
+     <li class="flex items-center gap-4 border-b pb-2">
+        <img src="Wortel Import.png" alt="Wortel Import" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+        <div class="flex justify-between w-full">
+          <span>Wortel Import</span><span>Rp 7.000/KG</span>
+        </div>
+      </li>
+ <li class="flex items-center gap-4 border-b pb-2">
+        <img src="Wortel Lokal.png" alt="Wortel Lokal" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+        <div class="flex justify-between w-full">
+          <span>Wortel Lokal</span><span>Rp 4.000/KG</span>
+        </div>
+      </li>
+<li class="flex items-center gap-4 border-b pb-2">
+        <img src="Ayam Kampung.png" alt="Ayam Kampung" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+        <div class="flex justify-between w-full">
+          <span>Ayam Kampung</span><span>Rp 60.000/Ekor/Kg</span>
+        </div>
+      </li>
+<li class="flex items-center gap-4 border-b pb-2">
+        <img src="Ayam Negri.png" alt="Ayam Negri" class="w-16 h-16 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+        <div class="flex justify-between w-full">
+          <span>Ayam Negri</span><span>Rp 35.000/Ekor/Kg</span>
+        </div>
+      </li>
+
+
+
+
+    </ul>
+  </main>
+
+<!-- Modal Preview Gambar -->
+  <div id="modal" class="fixed inset-0 hidden items-center justify-center modal-bg z-50">
+    <div class="relative">
+      <img id="modal-img" src="" class="max-w-full max-h-[90vh] rounded shadow-lg" />
+      <button onclick="closeModal()" class="absolute top-1 right-1 text-white text-2xl font-bold bg-black bg-opacity-50 px-2 rounded hover:bg-opacity-75">&times;</button>
+    </div>
+  </div>
+  <!-- Link WA Bawah -->
+  <footer class="text-center mt-10 py-4 bg-green-100">
+    <a href="https://wa.me/62881024692667" target="_blank" class="text-green-700 font-semibold hover:underline">
+      📲 Pesan Sekarang via WhatsApp: 0881-0246-92667
+    </a>
+  </footer>
+  <!-- Script Modal -->
+  <script>
+    function openModal(src) {
+      document.getElementById('modal-img').src = src;
+      document.getElementById('modal').classList.remove('hidden');
+      document.getElementById('modal').classList.add('flex');
+    }
+    function closeModal() {
+      document.getElementById('modal').classList.remove('flex');
+      document.getElementById('modal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
