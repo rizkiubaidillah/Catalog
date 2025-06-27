@@ -36,11 +36,11 @@
         <span>Cabe Merah Keriting</span><span>Rp80.000/KG</span>
       </div>
     </li>
-<!-- Item 2 -->
+    <!-- Item 2 -->
     <li class="flex items-center gap-4 p-3 bg-white rounded shadow">
-      <img src="Cabe Hijau Keriting .png" alt="Cabe Hijau Keriting " class="w-20 h-20 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+      <img src="Cabe Hijau Keriting.png" alt="Cabe Merah Keriting" class="w-20 h-20 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
       <div class="flex justify-between items-center w-full">
-        <span>Cabe Hijau Keriting </span><span>Rp80.000/KG</span>
+        <span>Cabe Hijau Keriting</span><span>Rp80.000/KG</span>
       </div>
     </li>
   <!-- Item 3 -->
@@ -149,12 +149,29 @@
       </div>
     </li>
 <!-- Item 18 -->
-    <li class="flex items-center gap-4 p-3 bg-white rounded shadow">
-      <img src="Ubi Jalar Ungu.png" alt="Ubi Jalar Ungu" class="w-20 h-20 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
-      <div class="flex justify-between items-center w-full">
-        <span>Ubi Jalar Ungu</span><span>Rp10.000/KG</span>
+ <li class="bg-white rounded shadow p-4 w-full">
+  <div class="flex gap-4">
+    <!-- Gambar -->
+    <img src="Ubi Jalar Ungu.png" alt="Ubi Jalar Ungu" class="w-20 h-20 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
+
+    <!-- Konten -->
+    <div class="flex-1">
+      <!-- Baris pertama: Nama + 1 KG + harga -->
+      <div class="grid grid-cols-3 gap-2 items-center mb-2">
+        <span class="col-span-1 text-green-800">Ubi Jalar Ungu</span>
+        <span class="col-span-1 pl-3">1 KG</span>
+        <span class="col-span-1 text-right">Rp10.000</span>
       </div>
-    </li>
+
+      <!-- Baris harga tambahan -->
+      <div class="grid grid-cols-3 gap-2 text-sm text-gray-800">
+        <span></span><span class="pl-4">3 KG</span><span class="text-right">Rp28.000</span>
+        <span></span><span class="pl-4">5 KG</span><span class="text-right">Rp45.000</span>
+        <span></span><span class="pl-4">10 KG</span><span class="text-right">Rp85.000</span>
+      </div>
+    </div>
+  </div>
+</li>
 <!-- Item 19 -->
     <li class="flex items-center gap-4 p-3 bg-white rounded shadow">
       <img src="Lobak.png" alt="Lobak" class="w-20 h-20 object-cover rounded cursor-pointer" onclick="openModal(this.src)" />
